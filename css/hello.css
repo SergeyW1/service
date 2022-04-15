@@ -1,0 +1,674 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.background-conteiner {
+	background: linear-gradient(180deg, rgba(77, 70, 130, 1) 0%, rgba(181, 138, 236, 1) 50%, rgba(104, 82, 186, 1) 79%);
+	padding-top: 100px;
+	padding-bottom: 80px;
+}
+
+.indent {
+	width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Lato', sans-serif;
+}
+
+.background-conteiner header:nth-child(1) {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.header-conteiner {
+	display: flex;
+	background-color: #fff;
+}
+
+.header-title {
+	font-size: 27px;
+	padding-left: 30px;
+	display: flex;
+	justify-content: space-evenly;
+	width: 13%;
+	align-items: center;
+}
+
+.nav-menu {
+	display: flex;
+	list-style: none;
+	padding: 0px 70px;
+	position: relative;
+}
+
+
+.menu-dropdown {
+	width: 80%;
+	text-align: center;
+	height: 90px;
+	display: flex;
+	position: relative;
+}
+
+.menu {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	font-size: 17px;
+	top: 108px;
+	background: #fff;
+	border-radius: 8px;
+	width: 446px;
+	left: -141px;
+	max-height: 0;
+	overflow: hidden;
+	transition: 1.5s all;
+	height: 385px;
+}
+
+#check-menu:checked~ .menu {
+	max-height: 385px;
+	font-size: 17px;
+}
+
+.title-nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	text-transform: uppercase;
+	color: rgb(77 77 77 / 74%);
+	font-weight: 900;
+	letter-spacing: 4px;
+	font-size: 15px;
+	padding: 10px 0;
+}
+
+.title-nav::before {
+	content: '';
+	position: absolute;
+	top: 63px;
+	height: 0.1px;
+	width: 411px;
+	border: 1px solid #b0b0b0f7;
+}
+
+.title-nav p {
+	color: rgb(149 149 149 / 39%);
+	letter-spacing: 2px;
+	padding-right: 130px;
+}
+
+.menu-dropdown_line-first {
+	padding: 30px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.menu-dropdown_line-first span {
+	background: url(/img/joseph-gonzalez.jpg);
+	border-radius: 50%;
+	background-size: 67px;
+	background-position: left 52% bottom 97%;
+	display: block;
+	width: 65px;
+	height: 65px;
+}
+
+.menu-dropdown_line-first p:nth-child(2) {
+	color: black;
+	font-weight: 600;
+	font-size: 18px;
+	padding-left: 35px;
+}
+
+.menu-dropdown_line-first p:nth-child(3) {
+	padding-left: 100px;
+	margin-top: -26px;
+	font-weight: 500;
+	color: rgb(149 149 149 / 73%);
+	font-size: 18px;
+}
+
+.menu-dropdown_line-first::before {
+	content: '';
+	position: absolute;
+	top: 198px;
+	left: 27px;
+	height: 0.1px;
+	width: 388px;
+	border: 1px solid #b0b0b036;
+}
+
+.menu-dropdown_line-second {
+	padding: 30px;
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.menu-dropdown_line-second span {
+	background: url(/img/faces-girl.jpg);
+	border-radius: 50%;
+	background-size: 100px;
+	background-position: left 52% bottom 97%;
+	display: block;
+	width: 65px;
+	height: 65px;
+}
+
+.menu-dropdown_line-second p:nth-child(2) {
+	color: black;
+	font-weight: 600;
+	font-size: 18px;
+	padding-left: 35px;
+}
+
+.menu-dropdown_line-second p:nth-child(3) {
+	padding-left: 100px;
+	margin-top: -26px;
+	font-weight: 500;
+	color: rgb(149 149 149 / 73%);
+	font-size: 18px;
+}
+
+.menu-dropdown_line-second::before {
+	content: '';
+	position: absolute;
+	top: 336px;
+	left: 27px;
+	height: 0.1px;
+	width: 388px;
+	border: 1px solid #b0b0b036;
+}
+
+#check-menu {
+	display: none;
+}
+
+.menu-dropdown:hover {
+	background-color: cornflowerblue;
+	cursor: pointer;
+}
+
+.menu-dropdown label {
+	display: flex;
+	align-items: center;
+	width: 140px;
+	height: 89px;
+	justify-content: center;
+	cursor: pointer;
+	font-weight: 600;
+	font-size: 17px;
+}
+
+.nav-menu a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+	font-weight: 600;
+	font-size: 17px;
+	padding-right: 35px;
+	padding-left: 35px;
+	padding-bottom: 30px;
+	padding-top: 29px;
+}
+
+.nav-menu a:nth-child(7) {
+	display: flex;
+	align-items: center;
+	border: none;
+	padding-right: 16px;
+	width: 107px;
+	justify-content: space-between;
+}
+
+.nav-menu a:nth-child(1):before {
+	content: '';
+	position: absolute;
+	top: 23px;
+	right: 465px;
+	height: 35px;
+	border: 0.1px solid #b0b0b045;
+}
+
+.nav-menu a:nth-child(2):before {
+	content: '';
+	position: absolute;
+	top: 23px;
+	right: 332px;
+	height: 35px;
+	border: 0.1px solid #b0b0b045;
+}
+
+.nav-menu a:nth-child(3):before {
+	content: '';
+	position: absolute;
+	top: 23px;
+	right: 209px;
+	height: 35px;
+	border: 0.1px solid #b0b0b045;
+}
+
+.nav-menu_logo {
+	background-color: rgb(201, 83, 53);
+	border-radius: 50%;
+	height: 25px;
+	width: 25px;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	display: flex;
+	font-size: 13px;
+	margin-left: 5px;
+	z-index: 2;
+}
+
+.nav-menu a:hover {
+	background-color: cornflowerblue;
+}
+
+.aside-icon {
+	display: flex;
+	align-items: center;
+	width: 13%;
+	justify-content: space-evenly;
+	padding-left: 256px;
+}
+
+.man-icon {
+	border-radius: 50%;
+	background: url(/img/face-man.jpg);
+	background-size: 42px;
+	background-position: right 48% bottom 95%;
+	height: 35px;
+	width: 35px;
+	display: block;
+}
+
+.conteiner-about {
+	background: url(/img/background-header.jpg);
+	background-size: cover;
+	background-position: right bottom 92%;
+	display: flex;
+}
+
+.conteiner-about div:nth-child(1),
+.conteiner-about div:nth-child(2) {
+	padding: 45px;
+}
+
+.conteiner-about_content {
+	display: block;
+	position: relative;
+	width: 50%;
+}
+
+.conteiner-about_content a {
+	text-decoration: none;
+	color: rgb(184 184 184);
+	font-weight: 200;
+	text-shadow: 1px 1px #464545;
+	display: flex;
+	align-items: center;
+	width: 13%;
+	justify-content: space-around;
+}
+
+
+.conteiner-about_content p:nth-child(2) {
+	color: aliceblue;
+	font-size: 25px;
+	margin-bottom: -3px;
+	padding-top: 10px;
+}
+
+.conteiner-about_content p:nth-child(3) {
+	color: rgb(184 184 184);
+	font-weight: 200;
+	text-shadow: 1px 1px #464545;
+	font-size: 15px;
+}
+
+.conteiner-about_aside {
+	position: relative;
+	display: flex;
+	width: 35%;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 200px;
+}
+
+.conteiner-about_aside a:nth-child(1) {
+	border-radius: 50%;
+	background: url(/img/face-man.jpg);
+	background-size: 35px;
+	background-position: right 48% bottom 95%;
+	height: 30px;
+	width: 30px;
+	border: 2px solid #fff;
+}
+
+.conteiner-about_aside a:nth-child(2) {
+	border-radius: 50%;
+	background: url(/img/faces-girl.jpg);
+	background-size: 45px;
+	background-position: right 48% bottom 95%;
+	height: 30px;
+	width: 30px;
+	border: 2px solid #fff;
+	margin-right: 40px;
+}
+
+.conteiner-about_aside a:nth-child(4) {
+	color: aliceblue;
+	font-size: 20px;
+}
+
+.conteiner-about_aside p:nth-child(5) {
+	color: rgb(184 184 184);
+	font-size: 20px;
+}
+
+.conteiner-about_aside a:nth-child(6) {
+	color: rgb(184 184 184);
+	font-weight: 200;
+	text-shadow: 1px 1px #464545;
+	font-size: 20px;
+}
+
+.conteiner-about_aside a:nth-child(4):hover,
+.conteiner-about_aside a:nth-child(6):hover {
+	color: aqua;
+}
+
+.conteiner-about_aside p:nth-child(3) {
+	content: '';
+	position: absolute;
+	left: 93px;
+	height: 29px;
+	width: 0.1px;
+	border: 0.1px solid #b0b0b0b5;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	align-items: end;
+}
+
+.sidebar_title {
+	text-transform: uppercase;
+	color: aliceblue;
+	border-bottom: 1px solid;
+	line-height: 43px;
+	font-size: 12px;
+	letter-spacing: 7px;
+}
+
+.sidebar_nav {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	line-height: 33px;
+	padding-top: 35px;
+}
+
+.sidebar_nav a {
+	display: block;
+	text-decoration: none;
+	color: rgb(184 184 184);
+	font-weight: 200;
+	text-shadow: 1px 1px #464545;
+	font-size: 15px;
+}
+
+.sidebar_nav a:hover {
+	color: #fff;
+}
+
+.wrapper {
+	background-color: #fff;
+	display: flex;
+}
+
+.wrapper_content {
+	padding: 25px 30px;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper_content p:nth-child(1) {
+	font-size: 23px;
+}
+
+.wrapper_content p:nth-child(2) {
+	color: rgb(184 184 184);
+	font-weight: 600;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-left: 850px;
+	padding-right: 30px;
+}
+
+.wrapper_content a:nth-child(3) {
+	background-color: #fff;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	border: 3px solid rgb(117 33 33 / 70%);
+}
+
+.wrapper_content a:nth-child(4) {
+	background-color: #fff;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	border: 3px solid rgb(180 85 13 / 70%);
+}
+
+.wrapper_content a:nth-child(5) {
+	background-color: #fff;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	border: 3px solid rgb(14 216 214 / 70%);
+}
+
+.wrapper_content a:nth-child(6) {
+	background-color: #fff;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	border: 3px solid rgb(14 209 149);
+}
+
+.wrapper_content a {
+	margin: 0px 5px;
+}
+
+.background-conteiner main .conteiner-pictures {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.conteiner-pictures {
+	background-color: #e1f2f2;
+}
+
+.content-pictures {
+	padding: 25px 30px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.content-pictures_binoscope {
+	background: url(/img/binoscope.jpg);
+	background-size: cover;
+	background-position-y: -75px;
+	height: 327px;
+	width: 366px;
+	border-radius: 20px;
+	position: relative;
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+.content-pictures_binoscope a:nth-child(1) {
+	text-decoration: none;
+	color: rgb(101 98 98);
+	font-weight: 200;
+	text-shadow: 1px 1px #464545;
+	display: flex;
+	align-items: center;
+	width: 20%;
+	justify-content: space-between;
+}
+
+
+.content-pictures_binoscope a:nth-child(2) {
+	background-color: transparent;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	border: 3px solid rgb(180 13 100);
+	margin-right: 10px;
+	display: block;
+	position: absolute;
+	top: 29px;
+	right: 20px;
+}
+
+.content-pictures_media {
+	background-color: #fff;
+	height: 327px;
+	width: 366px;
+	position: relative;
+	border-radius: 20px;
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+.content-pictures_media a:nth-child(1) {
+	text-decoration: none;
+	color: rgb(101 98 98);
+	font-weight: 200;
+	text-shadow: 1px 1px #464545;
+	display: flex;
+	width: 13%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content-pictures_media a:nth-child(2) {
+	background-color: transparent;
+	border-radius: 50%;
+	height: 20px;
+	width: 20px;
+	border: 3px solid rgb(13, 174, 180);
+	margin-right: 10px;
+	display: block;
+	position: absolute;
+	top: 29px;
+	right: 20px;
+}
+
+.svg-color path {
+	fill: yellow !important;
+}
+
+
+.content-pictures_media p:nth-child(3) {
+	color: rgb(147, 147, 148);
+	font-size: 29px;
+	letter-spacing: 2px;
+	padding-top: 15px;
+}
+
+.content-pictures_suns-cars {
+	background: url(/img/suns-cars.jpg);
+	background-size: cover;
+	background-position-x: -68px;
+	height: 327px;
+	width: 366px;
+	border-radius: 20px;
+	position: relative;
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+.content-pictures_suns-cars a:nth-child(1) {
+	text-decoration: none;
+	color: rgb(101 98 98);
+	font-weight: 200;
+	text-shadow: 1px 1px #464545;
+	display: flex;
+	width: 13%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.content-pictures_suns-cars p:nth-child(3) {
+	color: #fff;
+	font-size: 29px;
+	letter-spacing: 2px;
+	margin-top: 45px;
+	background-color: #0000005c;
+	width: 87%;
+	border-radius: 7px;
+}
+
+.content-pictures_suns-cars a:nth-child(4) {
+	border-radius: 50%;
+	background: url(/img/joseph-gonzalez.jpg);
+	background-position-x: 2px;
+	background-size: 49px;
+	border: 2px solid #fff;
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	bottom: 30px;
+	left: 19px;
+}
+
+.content-pictures_suns-cars a:nth-child(5) {
+	border-radius: 50%;
+	background: url(/img/jurica-koletic.jpg);
+	background-position-x: -3px;
+	background-size: 50px;
+	border: 2px solid #fff;
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	bottom: 30px;
+	left: 75px;
+}
+
+.content-pictures_suns-cars a:nth-child(6) {
+	border-radius: 50%;
+	background: url(/img/faces-girl.jpg);
+	background-position-x: -23px;
+	background-size: 87px;
+	border: 2px solid #fff;
+	width: 45px;
+	height: 45px;
+	position: absolute;
+	bottom: 30px;
+	left: 128px;
+}
+
+@media screen and (max-width: 1440px) {
+
+	.background-conteiner {
+		width: 1440px;
+		height: auto;
+	}
+}
