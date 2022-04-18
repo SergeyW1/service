@@ -25,6 +25,16 @@ a {
 	border-top-left-radius: 10px;
 }
 
+.background-conteiner main .conteiner-pictures {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.background-conteiner footer {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
 .header-conteiner {
 	display: flex;
 	background-color: #fff;
@@ -215,6 +225,7 @@ a {
 	justify-content: center;
 	cursor: pointer;
 	font-size: 17px;
+	font-weight: 600;
 }
 
 .nav-menu a {
@@ -243,7 +254,7 @@ a {
 	content: '';
 	position: absolute;
 	top: 26px;
-	right: 481px;
+	right: 472px;
 	height: 35px;
 	border: 0.1px solid #b0b0b045;
 }
@@ -252,7 +263,7 @@ a {
 	content: '';
 	position: absolute;
 	top: 26px;
-	right: 339px;
+	right: 334px;
 	height: 35px;
 	border: 0.1px solid #b0b0b045;
 }
@@ -377,29 +388,29 @@ a {
 	margin-right: 40px;
 }
 
-.conteiner-about_aside a:nth-child(4) {
+.conteiner-about_aside a:nth-child(3) {
 	color: aliceblue;
 	font-size: 20px;
 }
 
-.conteiner-about_aside p:nth-child(5) {
+.conteiner-about_aside p:nth-child(4) {
 	color: rgb(184 184 184);
 	font-size: 20px;
 }
 
-.conteiner-about_aside a:nth-child(6) {
+.conteiner-about_aside a:nth-child(5) {
 	color: rgb(184 184 184);
 	font-weight: 200;
 	text-shadow: 1px 1px #464545;
 	font-size: 20px;
 }
 
-.conteiner-about_aside a:nth-child(4):hover,
-.conteiner-about_aside a:nth-child(6):hover {
+.conteiner-about_aside a:nth-child(3):hover,
+.conteiner-about_aside a:nth-child(5):hover {
 	color: aqua;
 }
 
-.conteiner-about_aside p:nth-child(3) {
+.conteiner-about_aside a:nth-child(2)::after {
 	content: '';
 	position: absolute;
 	left: 93px;
@@ -456,59 +467,59 @@ a {
 	align-items: center;
 }
 
-.wrapper_content p:nth-child(1) {
+.wrapper_sort-by {
+	display: flex;
+	border: none;
+	align-items: center;
+	padding-left: 850px;
+	width: 14em;
+	justify-content: space-between;
+}
+
+.wrapper_content p {
 	font-size: 23px;
 }
 
-.wrapper_content p:nth-child(2) {
+.wrapper_sort-by p {
 	color: rgb(184 184 184);
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 13px;
 	text-transform: uppercase;
-	padding-left: 850px;
 	padding-right: 30px;
 }
 
-.wrapper_content a:nth-child(3) {
-	background-color: #fff;
-	border-radius: 50%;
-	height: 15px;
-	width: 15px;
-	border: 3px solid rgb(117 33 33 / 70%);
-}
-
-.wrapper_content a:nth-child(4) {
-	background-color: #fff;
-	border-radius: 50%;
-	height: 15px;
-	width: 15px;
-	border: 3px solid rgb(180 85 13 / 70%);
-}
-
-.wrapper_content a:nth-child(5) {
-	background-color: #fff;
-	border-radius: 50%;
-	height: 15px;
-	width: 15px;
-	border: 3px solid rgb(14 216 214 / 70%);
-}
-
-.wrapper_content a:nth-child(6) {
-	background-color: #fff;
-	border-radius: 50%;
-	height: 15px;
-	width: 15px;
-	border: 3px solid rgb(14 209 149);
-}
-
-.wrapper_content a {
+.wrapper_sort-by input {
 	margin: 0px 5px;
 }
 
-.background-conteiner main .conteiner-pictures {
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+.catalog-filter {
+	background-color: #fff;
+	border-radius: 50%;
+	height: 15px;
+	width: 15px;
+	cursor: pointer;
 }
+
+.catalog-filter input {
+	display: none;
+}
+
+.crimson {
+	border: 3px solid rgb(117 33 33 / 70%);
+}
+
+.orange {
+	border: 3px solid rgb(180 85 13 / 70%);
+}
+
+.blue {
+	border: 3px solid rgb(14 216 214 / 70%);
+}
+
+.green {
+	border: 3px solid rgb(14 209 149);
+}
+
 
 .conteiner-pictures {
 	background-color: #e1f2f2;
@@ -629,7 +640,7 @@ a {
 	align-items: center;
 }
 
-.content-pictures_suns-cars p:nth-child(3) {
+.content-pictures_suns-cars p:nth-child(2) {
 	color: #fff;
 	font-size: 29px;
 	letter-spacing: 2px;
@@ -639,7 +650,7 @@ a {
 	border-radius: 7px;
 }
 
-.content-pictures_suns-cars a:nth-child(4) {
+.content-pictures_suns-cars a:nth-child(3) {
 	border-radius: 50%;
 	background: url(/img/joseph-gonzalez.jpg);
 	background-position-x: 2px;
@@ -652,7 +663,7 @@ a {
 	left: 19px;
 }
 
-.content-pictures_suns-cars a:nth-child(5) {
+.content-pictures_suns-cars a:nth-child(4) {
 	border-radius: 50%;
 	background: url(/img/jurica-koletic.jpg);
 	background-position-x: -3px;
@@ -665,7 +676,7 @@ a {
 	left: 75px;
 }
 
-.content-pictures_suns-cars a:nth-child(6) {
+.content-pictures_suns-cars a:nth-child(5) {
 	border-radius: 50%;
 	background: url(/img/faces-girl.jpg);
 	background-position-x: -23px;
@@ -790,3 +801,83 @@ a {
 	letter-spacing: 2px;
 	padding-top: 15px;
 }
+
+.footer-conteiner {
+	background-color: rgb(1 8 19 / 90%);
+	margin-top: -116px;
+	position: sticky;
+}
+
+.footer-content {
+	padding: 50px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	list-style: none;
+	width: 90%;
+	font-family: 'Mukta', sans-serif;
+}
+
+.footer-content_item {
+	color: rgb(147, 147, 148);
+	border: 2px solid rgb(147, 147, 148);
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	padding: 11px 12px;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	font-size: 15px;
+	top: 33px;
+	z-index: 1;
+	background-color: black;
+}
+
+.footer-content_item--blank {
+	padding: 0;
+	top: 43px;
+}
+
+.footer-content_item-sign {
+	color: #fff;
+	border: 2px solid #7f7f7f;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	background-color: rgb(1 8 19);
+	text-align: center;
+	padding: 1px 20px;
+	display: inline-block;
+	font-size: 30px;
+	top: 21px;
+	margin-left: -5px;
+}
+
+.footer-content_item-change {
+	color: #fff;
+	border: 2px solid #7f7f7f;
+	border-radius: 26px;
+	position: absolute;
+	z-index: 1;
+	background-color: rgb(1 8 19);
+	top: 22px;
+	padding: 11px 20px;
+	margin-left: -31px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.footer-content::after {
+	content: '';
+	position: absolute;
+	border: 1px solid #605d5d5e;
+	width: 1150px;
+	left: 74px;
+}
+
+
+
+
