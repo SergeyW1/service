@@ -315,7 +315,7 @@ a {
 
 .conteiner-about {
 	background: url(/img/background-header.jpg);
-	background-color: pink;
+	background-color: #6F3F41;
 	background-size: cover;
 	background-position: right bottom 92%;
 	display: flex;
@@ -806,6 +806,7 @@ a {
 	background-color: rgb(1 8 19 / 90%);
 	margin-top: -116px;
 	position: sticky;
+	bottom: 0;
 }
 
 .footer-content {
